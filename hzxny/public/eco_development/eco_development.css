@@ -1,0 +1,169 @@
+body{
+	font-family: 'Microsoft YaHei';
+	min-width: 1200px;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+ul{
+	padding-left: 0;
+	margin-bottom: 0;
+}
+header{
+	width: 100%;
+	height: auto;
+	background: #191919;
+}
+header nav{
+	width: 1200px;
+	height: 139px;
+	overflow: hidden;
+	margin:auto;
+}
+header nav>li{
+	float: left;
+	line-height: 139px;
+}
+header nav>ul{
+	float: right;
+	width: auto;
+	height: 100%;
+	overflow: hidden;
+	line-height: 139px;
+	font-size: 35px;
+	color: white;
+}
+header nav>ul li{
+	float: left;
+	margin-left: 56px;
+}
+header nav>ul li:nth-child(3){
+	width: 218px;
+	background: url(img/choice.png) no-repeat center;
+	text-align: center;
+
+}
+header nav>ul li:nth-child(2){
+	margin-left: 106px;
+}
+header nav>ul li:nth-child(3) a{
+		color: #cd0000;
+}
+header nav>ul li a:hover{
+	color: #cd0000;
+	text-decoration: none;
+}
+
+.banner{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	position: relative;
+}
+.banner .bg{
+	width: 100%;
+	height: auto;
+}
+.banner>div{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.banner>div>img{
+	width: auto;
+	height: 100%;
+}
+#left{
+	text-align: left;
+	opacity: 0;
+	left: -200px
+}
+#right{
+	text-align: right;
+	right: -200px;
+	opacity: 0;
+}
+#flower{
+	text-align: center;
+	opacity: 0;
+}
+#title{
+	opacity: 0;
+	text-align: center;
+	z-index: 5;
+}
+.intr{
+	width: 100%;
+	height: 850px;
+	position: relative;
+	overflow: hidden;
+}
+.intr h3{
+	font-size: 32px;
+	padding-left: 18.75%;
+	margin-top: 83px;
+	margin-bottom: 30px;
+}
+.line{
+	width: 80px;
+	border-bottom: 5px solid #ca373e;
+	margin-left:18.75%; 
+	margin-bottom: 70px;
+}
+.row{
+	margin-left: 0;
+	margin-right: 0;
+}
+.flower1{
+	width: 100%;
+	height: auto;
+}
+.intrp{
+	text-indent: 50px; 
+	font-size: 22px;
+}
+.intr_border{
+	width: 74px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 10%;
+}
+.intr_border p{
+	float: left;
+	width: 0;
+	height: 100%;
+	border-right:3px solid #b5b5b5;
+	margin-right: 10px;
+}
+.logo{
+	position: absolute;
+	top: 50%;
+	left: -35px;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: white;
+	margin-top: -50px;
+	border: 1px solid #b5b5b5;
+	text-align: center;
+	line-height: 100px;
+}
+.map{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+.map>img{
+	width: 100%;
+	height: auto;
+}
+#mapbox{
+	width: 1000px;
+	height: 500px;
+}
