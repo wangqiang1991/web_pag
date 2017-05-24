@@ -51,10 +51,31 @@
 	</div>
 	<div class="map">
 		<img src="img/mapbg.jpg" alt="">
-		<div id='mapbox'></div>
-		
+		<div>
+			<div class="mapbox">
+				<p>地理位置</p>	
+				<div id='mapbox'></div>	
+			</div>
+		</div>
+		<form>
+			<h3>联系我们</h3>
+			<div>
+				<p><label>姓名*</label><input type="text" name="user"></p>
+				
+				<p><label>电话*</label><input type="text" name="phone"></p>
+			
+				<p><label>邮箱*</label><input type="text" name="email"></p>
+			</div>
+			<div>
+				<label>其他</label><textarea style="resize: none;" cols="30" rows="10" name="other"></textarea>
+			</div>
+			<p><input id="btn" type="button" value="提交"></p>
+		</form>
 	</div>
-
+	<footer>	
+			<p><span>达州市宏智新农业发展有限公司</span><span>地址：成都市桐梓林南路首座写字楼C座22楼</span><span>电话：208-69365289</span></p>
+			<p><span>Copyright © 2016www.hongzhi.com -All Rights Reserved.</span><span>达州市宏智新农业发展有限公司版权所有</span></p>
+	</footer>
 	<script src='../common/jquery-1.12.4.min.js'></script>
 	<script src='js/bdMap.js'></script>
 	<script>
@@ -76,8 +97,8 @@
 				opacity:1
 			},2500)	
 
-
-				ShowMap("mapbox",{city:'石家庄',addr:'成都市环球中心',title:'吊儿',lawfirm:'XXX公司',tel:'1362380952x',mapx:'',pic:'http://www.shalisoft.com/images/100.jpg',ismove:'0',piobj:'nxp'});	
+				//地图设置
+				ShowMap("mapbox",{city:'成都市',addr:'成都市桐梓林南路首座写字楼C座22楼',title:'宏智农业',lawfirm:'宏智新农业发展有限公司',tel:'208-69365289',mapx:'',pic:'http://www.shalisoft.com/images/100.jpg',ismove:'0',piobj:'nxp'});	
 
 	})
 	</script>

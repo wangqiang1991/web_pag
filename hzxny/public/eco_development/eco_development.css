@@ -163,7 +163,80 @@ header nav>ul li a:hover{
 	width: 100%;
 	height: auto;
 }
+.map>div{
+	position: relative;
+	width: 100%;
+	height: 600px;
+}
+.mapbox{
+	position: absolute;
+	width: 80%;
+	padding: 10px;
+	height: auto;
+	top: -50px;
+	left: 10%;
+	background: white;
+	border: 10px solid #fafafa;
+}
+.mapbox>p{
+	font-size: 32px;
+	text-align: center;
+}
 #mapbox{
-	width: 1000px;
+	width: 100%;
 	height: 500px;
+}
+.map form{
+	width: 80%;
+	margin: auto;
+	height: auto;
+	overflow: hidden;
+}
+.map form h3{
+	margin-bottom: 25px;
+}
+.map form div{
+	float: left;
+	margin-right: 30px;
+}
+.map form div label{
+	float: left;
+}
+.map label{
+	padding-right: 15px;
+	margin-bottom: 62px;
+}
+.map form p{
+	clear: both;
+	text-align: left;
+}
+#btn{
+	width: 100px;
+	height: 30px;
+	font-size: 16px;
+	color: white;
+	background: #17a56b;
+	border:none;
+	outline: none;
+	margin-left: 410px;
+}
+footer {
+	margin-top: 150px;
+	width: 100%;
+	height: 190px;
+	background: #404040;	
+	overflow: hidden;
+}
+footer  p{
+	text-align: center;
+	color: white;
+	font-size: 16px;
+}
+footer  p:first-child{
+	margin-top: 78px;
+	margin-bottom: 30px;
+	font-size: 20px;
+}
+footer  p span{
+	margin-right: 45px;
 }
