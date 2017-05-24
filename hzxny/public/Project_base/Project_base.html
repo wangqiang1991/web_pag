@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Language" content="zh-CN">
+	<link rel="stylesheet" href="../common/bootstrap.min.css">
+	<link rel="stylesheet" href="./Project_base.css">
+	<title>项目基地</title>
+</head>
+<body>
+	<header>
+		<nav>
+			<li><a href="../index.html"><img src="../new_agriculture/img/logo.png" alt=""></a></li>
+			<ul>
+				<li><a href="../index.html">新农业</a></li>
+				<li><a href="./Project_base.html">项目基地</a></li>
+				<li><a href="../eco_development/eco_development.html">生态开发</a></li>
+			</ul>			
+		</nav>
+		<div class="banner">
+			<img class='bg' src="img/bg.jpg" alt="">
+			<div class="title1"><img src="img/title1.png" alt=""></div>
+			<div class="title2"><img src="img/title2.png" alt=""></div>
+		</div>
+	</header>
+	<div class="new">
+		<div class="div1 row" style="opacity: 1;z-index: 5;">
+			<div class="col-md-6"><img src="img/img1.jpg" ></div>
+  			<div class="col-md-5">
+				<h3>农业基地</h3>
+				<p class="line"></p>
+				<p class="intr">循环农业园区模式借鉴生态工业园区的经验，将种植业、养殖业、农产品加工业、生物质能源业等纳入整个循环农业产业体系中，实现园区内农业的不同产业相互依存，减少农业废弃物的产生量、降低处理的成本费用、节约能源和资源，实现农业经济发展和农村生态环境保护的良性循环。
+				</p>
+  			</div>
+		</div>
+		<div class="div2 row">
+			<div class="col-md-6"><img src="img/img2.jpg" ></div>
+  			<div class="col-md-5">
+				<h3>循环科技农业</h3>
+				<p class="line"></p>
+				<p class="intr">农业实现资源节约、环境友好、可持续发展。主要有五中模式：一是循环农业园区模式。借鉴生态工业园区的经验，将种植业、养殖业、农产品加工业、生物质能源业等纳入整个循环农业体系中，实现园区内农业的不同产业相互依存，减少农业废弃物的产生量、减低处理的成本费用、节约能源和资源，实现农业经济发展和农村生态环境保护的良性循环。
+				</p>
+  			</div>
+		</div>
+		<div class="div3 row">
+			<div class="col-md-6"><img src="img/img3.jpg" ></div>
+  			<div class="col-md-5">
+				<h3>休闲农业</h3>
+				<p class="line"></p>
+				<p class="intr">农业与“三产”的有机融合。利用农业和农村资源，为居民提供观光、休闲、度假、娱乐、健身等多项服务。
+				</p>
+  			</div>
+		</div>
+		 <div class="div4 row">
+			<div class="col-md-6"><img src="img/img4.jpg" ></div>
+  			<div class="col-md-5">
+				<h3>会展农业</h3>
+				<p class="line"></p>
+				<p class="intr">以会议、展览、展销、节庆、农事等活动形式为载体，通过农业会展活动，实现了产业的有机融合，拉长农业产业链，提升农业附加值，达到“举办一个展会、拉动一个产业、富裕一方农民“的目的。
+				</p>
+  			</div>
+		 </div>
+		 <p class="choice">
+		 <span id="0" class="spanchoice"></span>
+		 <span id="1"></span>
+		 <span id="2"></span>
+		 <span id="3"></span>
+		 </p>
+	</div>
+	<div class="tour">
+		<div class="tour_top">
+			<h3>综合旅游</h3>
+			<span class="line1"></span>
+		</div>
+		<div class="row">
+			<div class="col-md-3" style="font-size: 30px; line-height: 200px; text-align: center;">野外烧烤</div>
+			<div class="col-md-6"><img src="img/tour1.jpg" alt=""></div>
+			<div class="col-md-3"><img src="img/tour2.jpg" alt=""><p>户外露营</p></div>
+		</div>
+		<div class="row">
+			<div class="col-md-3"><img src="img/tour3.jpg" alt=""></div>
+			<div class="col-md-3" style="position: relative;" id="div" ><p style="height: 80px;">植物迷宫</p><img style="position: absolute; left: 0;bottom: 0;" src="img/tour4.jpg" alt=""></div>
+			<div class="col-md-3"><img src="img/tour5.jpg" alt=""></div>
+			<div class="col-md-3"><img src="img/tour6.jpg" alt=""><p>创意农田</p>	</div>
+		</div>
+	</div>
+	<footer>	
+			<p><span>达州市宏智新农业发展有限公司</span><span>地址：成都市桐梓林南路首座写字楼C座22楼</span><span>电话：208-69365289</span></p>
+			<p><span>Copyright © 2016www.hongzhi.com -All Rights Reserved.</span><span>达州市宏智新农业发展有限公司版权所有</span></p>
+	</footer>
+	<script src='../common/jquery-1.12.4.min.js'></script>
+	<script>
+		$(function(){
+
+			//banner 的出现
+			$('.title1').animate({
+				opacity:'1'
+			},2500);
+			$('.title2').delay(2000).animate({
+				opacity:'1'
+			},2500);
+
+
+			//获取图片高度设置
+			window.onload = function(){
+				var height = $('.new img').eq(0).height();
+				$('.new').css({
+					height:height
+				});
+				$('#div').css({
+					height:$('#div').parent().height()
+				})
+			};
+			
+			//轮播	
+			$('.choice span').on('mouseenter',function(){
+				var id =  $(this)[0].id;
+				$('.new>div').css({
+						opacity:0,
+						zIndex:1
+				})
+				$('.choice span').removeClass('spanchoice');
+				$(this).addClass('spanchoice');	
+				if(id=='0'){
+					$('.div1').css({
+						zIndex:5
+					}).animate({
+						opacity:1
+					},700)
+				}
+				if(id=='1'){
+					$('.div2').css({
+						zIndex:5
+					}).animate({
+						opacity:1
+					},700)
+				}
+				if(id=='2'){
+					$('.div3').css({
+						zIndex:5
+					}).animate({
+						opacity:1
+					},700)
+				}
+				if(id=='3'){
+					$('.div4').css({
+						zIndex:5
+					}).animate({
+						opacity:1
+					},700)
+				}
+
+			});
+
+			
+		})	
+	</script>
+</body>
+</html>
