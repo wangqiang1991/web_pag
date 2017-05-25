@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Language" content="zh-CN">
+	<link rel="stylesheet" href="../common/animate.css">
+	<link rel="stylesheet" href="../common/bootstrap.min.css">
+	<link rel="stylesheet" href="./about.css">
+	<title>关于我们</title>
+</head>
+<body>
+	<header>
+	<img src="img/bg.jpg" alt="">
+	<nav>
+		<ul class="logo"><a href="../index.html"><img style="margin-right: 22px;" src="../common/logo.png" alt="">四川俊宜商贸有限公司</a></ul>
+		<ul class="nav">
+			<li><a href="../index.html">首页</a></li>
+			<li><a href="../dty/dty.html">丹婷游</a></li>
+			<li><a href="../case/case.html">案列</a></li>
+			<li><a href="../service/service.html">服务</a></li>
+			<li><a class="page" href="./about.html">关于</a></li>
+		</ul>
+	</nav>
+	<div class="title">
+			<p class="fadeInUp">俊宜商贸</p>
+			<p class="fadeInUp">新型专业化生态农业贸易公司 </p>
+	</div>	
+	</header>
+	<div class="content">
+		<h3 class="fadeInUp">公司简介</h3>
+		<p class="fadeInUp">四川俊宜商贸有限公司（简称俊宜商贸），是四川科威龙奥集团旗下全资控股子公司，以农副产品批发、销售配送、国内外进出口贸易及模式渠道为一体的新型专业化生态农业贸易公司。</p>
+		<p class="fadeInUp">以“专业、诚信、值得信赖”的企业宗旨，为广大消费群体及客户提供最优质的产品及服务。“专注”是我们贸易平台的核心价值，“共赢”是我们共同的核心目标，我们拥有团队协作，勇于开拓的高素质营销队伍，灵活有效的方式及“以实力求生存，以信誉谋发展”的经营理念。</p>
+		<div id="map" class="fadeInUp"></div>
+		<div id="contact">
+			<p class="fadeInUp">公司地址:成都市武侯区高升桥东路2-6号1栋2层21071号</p>
+			<p class="fadeInUp">电话:15000000000</p>
+			<p class="fadeInUp">联系人:方先生</p>
+		</div>	
+	</div>
+	<footer>
+		<img src="../common/footerbg.png" alt="">
+		<div class="footer">
+			<img class="fadeInUp" src="../common/footerlogo.png" alt="">
+			<p class="fadeInUp" style="font-size: 30px;margin-bottom: 20px;">俊宜商贸</p>
+			<p class="fadeInUp">四川俊宜商贸有限公司版权所有</p>
+			<p class="fadeInUp">Copyright © 2016 www.ecshy.com. All Rights Reser</p>
+		</div>
+	</footer>
+	<script src='../common/jquery-1.12.4.min.js'></script>
+	<script src='../common/wow.min.js'></script>
+	<script src='./bdMap.js'></script>
+	<script>
+	$(function () {
+		var wow = new WOW({
+			    boxClass: 'fadeInUp',
+			    animateClass: 'animated',
+			    mobile: true 
+			});
+		wow.init();	
+
+		ShowMap("map",{city:'石家庄',addr:'成都市武侯区高升桥东路2-6号1栋2层21071号',title:'俊宜商贸',lawfirm:'四川俊宜商贸有限公司',tel:'15000000000',mapx:'',pic:'http://www.shalisoft.com/images/100.jpg',ismove:'0',piobj:'nxp'});
+
+
+
+
+		
+	})
+	</script>
+</body>
+</html>

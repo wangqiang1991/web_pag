@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="Language" content="zh-CN">
 	<link rel="stylesheet" href="./common/bootstrap.min.css">
-	<link rel="stylesheet" href="./new_agriculture/new_agriculture.css">
+	<link rel="stylesheet" href="./index/index.css">
 	<title>新农业</title>
 </head>
 <body>
@@ -26,61 +26,8 @@
 			<div class="bannerright"></div>
 		</div>
 	</header>
-	<div class='agriculture_value'>
-		<div>
-			<h3>拉长农业产业链，提升农业附加价值</h3>
-			<p class="line"></p>
-			<div class="intr">
-				<li> <img src="new_agriculture/img/img1.png" alt=""><div>
-					<p><img src="new_agriculture/img/img01.png" alt=""></p>
-					<p>农业基地</p>
-					<p>应用循环农业园区模式，品种专用化、生产标准化、操作机械化、调控自动化，实现资源节约、环境友好、可持续发展。</p>
-				</div></li>
-				<li> <img src="new_agriculture/img/img3.png" alt=""><div>
-					<p><img src="new_agriculture/img/img02.png" alt=""></p>
-					<p>休闲农业</p>
-					<p>定位于中高端、多元化市场需求，积极开发农业的生产、生活、生态、示范功能，提供观光、休闲、度假、娱乐、健身等多项服务。</p>
-				</div></li>
-				<li> <img src="new_agriculture/img/img2.png" alt=""><div>
-					<p><img src="new_agriculture/img/img03.png" alt=""></p>
-					<p>会展农业</p>
-					<p>以会议、展览、展销、节庆、农事等活动形式为载体，通过农业会展活动，实现了产业的有机融合，拉长农业产业链，提升农业附加值。</p>
-				</div></li>
-				<li> <img src="new_agriculture/img/img4.png" alt=""><div>
-					<p><img src="new_agriculture/img/img04.png" alt=""></p>
-					<p>综合旅游</p>
-					<p>通过创意把文化艺术、农业技术、农副产品和农耕活动有机结合起来，打造婚纱摄影、艺术创作、影视拍摄为一体的综合型现代农业旅游观光区</p>
-				</div></li>
-			</div>	
-			<h3 style="margin-bottom: 40px;">中国油牡丹（西南达州）生态农业产业园 </h3>
-			<h4 style="margin-bottom: 40px;">集油牡丹种植、开发、销售为一体</h4>
-			<p class="line"></p>
-		</div>
-	</div>
-	<div class="goods">
-		<div>
-			<div class="bg"></div>
-			<ul>
-				<li>
-				<p>牡丹籽油</p>
-				<p>世界上最好的油，植物油中的珍品，是中国独有的健 康保健食用油脂。</p>
-				<p></p>
-				</li>
-				<li>
-				<p>牡丹花蕊茶</p>
-				<p>含有大量的黄酮类化合物，能显著抑制清除强致癌物质亚硝酸盐的生成，也是常见的心脑血管疾病的治疗药物。</p>
-				<p></p>
-				</li>
-				<li>
-				<p>丹皮</p>
-				<p>牡丹皮，中药材，归心、肝、肾经，具有清热凉血、活血化淤、退虚热等功效。 </p>
-				<p></p>
-				</li>
-
-			</ul>
-		</div>
-		<p class="title"><img style="margin-bottom: 35px;" src="new_agriculture/img/title0.png" alt=""> <img src="new_agriculture/img/title.png" alt=""></p>
-	</div>
+	
+	
 	<footer>
 		<div>
 			<h3>牡丹产业园项目  </h3>
@@ -105,44 +52,6 @@
 	<script src='./common/jquery-1.12.4.min.js'></script>
 	<script>
 	$(function(){
-
-		
-		window.onload =function(){
-				//banner文字居中
-			var marginLeft=-$('.contentimg').width();
-			$('.contentimg').css({
-				marginLeft:marginLeft/2
-			})
-		}
-
-		
-
-		// banner的出现
-
-		$(".bannerleft").animate({
-		    opacity: 1,
-		    left:0
-		 }, 2500);	
-		$(".bannerright").animate({
-		    opacity: 1,
-		    right:0
-		 }, 2500);	
-		$(".contentimg").delay(2500).animate({
-		    opacity: 1
-		 }, 2000);	
-
-		$('.hoverimg img').on('mouseenter',function(){
-			$('.hoverimg img').css({
-				border:'5px solid #bfbfbf'
-			})
-			$(this).css({
-				border:'5px solid white'
-			})
-			var img=$(this).attr('src');
-			var jpg = img.slice(0,img.lastIndexOf('.'))+'.jpg';
-			$('#footerimg').attr('src',jpg)
-		})
-
 
 	})
 	</script>
