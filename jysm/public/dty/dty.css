@@ -77,6 +77,175 @@ header a{
 	width: 100%;
 	height: auto;
 }
+.content1{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.content1>div{
+	width: 1170px;
+	height: auto;
+	overflow: hidden;
+	margin: auto;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.content1>div h3{
+	font-size: 32px;
+	text-align: center;
+	color: #2585fb;
+}
+.content1>div>p{
+	font-size: 20px;
+	color: #b8b8b8;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 80px;
+}
+.content1>div>div{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.content1>div>div>div{
+	width: 50%;
+	float: left;
+	height: auto;
+	overflow: hidden;
+}
+.content1>div>div>div img{
+	width: 100%;
+	height: auto;
+}
+.content1>div>div>div.right{
+	color: #828282;
+	font-size: 14px;
+	text-align: left;
+	padding-top: 70px;
+	line-height: 25px;
+	padding-left: 60px;
+}
+.content2{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+.content2>div{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+.content2>div img{
+	width: 100%;
+	height: auto;
+}
+.content2>div>div{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0; left: 0;
+}
+.content2>div>div p{
+	color: white;
+	text-align:center;
+}
+.content2>div>div p:first-child{
+	font-size: 52px;
+	padding-top: 15%;
+}
+.content2>div>div p:nth-child(2){
+	font-size: 28px;
+	margin-top: 25px;
+}
+.content2>ul{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.content2>ul>li{
+	width: 33.3%;
+	height: auto;
+	float: left;
+	position: relative;
+	overflow: hidden;
+}
+.content2>ul>li img{
+	width: 100%;
+	height: auto;
+}
+.content2>ul>li div{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0; left: 0;
+	background: rgba(0,0,0,0.4);
+	display: none;
+}
+.content2>ul>li:hover div{
+	display: block;
+}
+.content2>ul>li div h3{
+	font-size: 32px;
+	color: white;
+	text-align: center;
+	padding-top: 20%;
+}
+.content2>ul>li div p{
+	width: 75%;
+	height: auto;
+	text-align: left;
+	margin: auto;
+	color: white;
+	font-size: 18px;
+	line-height: 35px;
+}
+.content3{
+	width: 100%;
+	height: auto;
+}
+.content3>div{
+	width: 1170px;
+	height: auto;
+	margin: auto;
+	padding-top: 100px;
+	padding-bottom: 150px;
+}
+.content3>div>h3{
+    font-size: 42px;
+    text-align: center;
+    color: #2585fb;
+}
+.content3>div p{
+	font-size: 20px;
+	color: #7a7a7a;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 80px;
+}
+.content3>div ul{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.content3>div ul li{
+	width: 25%;
+	height: auto;
+	float: left;
+	text-align: center;
+}
+.content3>div ul li h4{
+	color: #333;
+	font-size: 30px;
+	margin-top: 60px;
+	margin-bottom: 20px;
+}
+.content3>div ul li p{
+	width: 75%;
+	margin: 0 auto ;
+	font-size: 14px;
+	
+}
 
 
 footer{
