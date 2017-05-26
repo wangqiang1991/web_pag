@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+   	 	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="Language" content="zh-CN">
+		<link rel="stylesheet" href="../common/animate.css">
+		<link rel="stylesheet" href="../common/bootstrap.min.css">
+		<link rel="stylesheet" href="./case.css">
+		<title>案例</title>
+	</head>
+	<body>
+		<header>
+			<img src="img/bg.jpg" alt="">
+			<nav>
+				<ul class="logo"><a href="../index.html"><img style="margin-right: 22px;" src="../common/logo.png" alt="">四川俊宜商贸有限公司</a></ul>
+				<ul class="nav">
+					<li><a href="../index.html">首页</a></li>
+					<li><a href="../dty/dty.html">丹婷游</a></li>
+					<li><a class="page" href="./case.html">案列</a></li>
+					<li><a href="../service/service.html">服务</a></li>
+					<li><a href="../about/about.html">关于</a></li>
+				</ul>
+			</nav>
+			<div class="bg">
+				<div class="title">
+					<img src="img/triangle1.png" alt="">
+						<div class="triangle1">
+						<img src="img/triangle2.png" alt="">
+						<div class="triangle2">
+							<img src="img/triangle3.png" alt="">
+						</div>
+						</div>
+						<p id="title">新鲜健康的农产品配送服务</p>
+				</div>
+			</div>	
+	</header>
+	<div class="content">
+		<ul>
+			<li class="intr"><h3 class="fadeInUp">集团食堂、商超配送</h3><p class="fadeInUp">“蔬”出安全“菜”会健康 </p><img class="fadeInUp"  src="img/img1.png" alt=""></li>
+			<li><img src="img/img1.jpg" alt=""><div class="titlep"><img style="left: -42px;" src="img/diamond.png" alt=""><p class="fadeInUp">与四川宏义集团达成合作协定，全方位构建产品配送供应链，承包集团食堂、商超全部农副产品批发及配送。</p></div></li>
+		</ul>
+		<ul>
+			
+			<li><img src="img/img2.jpg" alt=""><div class="titlep"><img style="right: -42px;" src="img/diamond.png" alt=""><p style="padding-top: 5%;" class="fadeInUp">同四川大学后勤中心合作，共同建立了高效安全畅通的食物供求平台，利用公司在采购上量大的优势，确保各类食品原料价廉物美的供应，保障个品种齐全、价格便宜、货源稳定、安全可靠、包退包换、准时快捷，为川大食堂与商超提供质优价廉的粮油、干杂货、冻品、鲜禽、鲜鱼、鲜肉、豆制品、蔬菜、水果及海鲜产品等各种农副产品配送。 </p></div></li>
+			<li class="intr"><h3 class="fadeInUp">四川大学后勤中心</h3><p class="fadeInUp">食物供求平台、农副产品配送 </p><img style="height: 183px;" class="fadeInUp"  src="img/img2.png" alt=""></li>
+		</ul>
+		<ul>
+			<li class="intr"><h3 class="fadeInUp">成都信息工程学院</h3><p class="fadeInUp">教职工食堂、学生食堂、商超等 </p><img class="fadeInUp"  src="img/img3.png" alt=""></li>
+			<li><img src="img/img3.jpg" alt=""><div class="titlep"><img style="left: -42px;" src="img/diamond.png" alt=""><p class="fadeInUp">与成都信息工程学院银杏酒店管理学院进行合作，承包学校教职工食堂、学生食堂校园超市的农副产品批发及配送。</p></div></li>
+		</ul>
+	</div>
+	<footer>
+		<img src="../common/footerbg.png" alt="">
+		<div class="footer">
+			<img class="fadeInUp" src="../common/footerlogo.png" alt="">
+			<p class="fadeInUp" style="font-size: 30px;margin-bottom: 20px;">俊宜商贸</p>
+			<p class="fadeInUp">四川俊宜商贸有限公司版权所有</p>
+			<p class="fadeInUp">Copyright © 2016 www.ecshy.com. All Rights Reser</p>
+		</div>
+	</footer>
+	<script src='../common/jquery-1.12.4.min.js'></script>
+	<script src='../common/wow.min.js'></script>
+	<script>
+	$(function () {
+		var wow = new WOW({
+			    boxClass: 'fadeInUp',
+			    animateClass: 'animated',
+			    mobile: true 
+			});
+		wow.init();	
+
+		$('.title').animate({
+			opacity:1
+		},1000);
+		$('.triangle1').delay(1000).animate({
+			opacity:1
+		},1000);
+		$('.triangle2').delay(2000).animate({
+			opacity:1
+		},1000);
+		$('#title').delay(3000).animate({
+			opacity:1
+		},1000);
+
+	
+
+
+	})
+	</script>
+	</body>
+	</html>	
