@@ -3,56 +3,52 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+   	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="Language" content="zh-CN">
+	<link rel="stylesheet" href="./common/animate.css">
 	<link rel="stylesheet" href="./common/bootstrap.min.css">
 	<link rel="stylesheet" href="./index/index.css">
-	<title>新农业</title>
+	<title>首页</title>
 </head>
 <body>
 	<header>
-		<nav>
-			<li><a href="./index.html"><img src="new_agriculture/img/logo.png" alt=""></a></li>
-			<ul>
-				<li><a href="./index.html">新农业</a></li>
-				<li><a href="./Project_base/Project_base.html">项目基地</a></li>
-				<li><a href="./eco_development/eco_development.html">生态开发</a></li>
-			</ul>			
-		</nav>
-		<div class="banner">
-			<img src="new_agriculture/img/topbg.jpg" alt="">	
-			<div class="bannerleft"></div>
-			<img class='contentimg' src="new_agriculture/img/content_02.png" alt="">
-			<div class="bannerright"></div>
-		</div>
-	</header>
+			
+			<nav>
+				<ul class="logo"><a href="./index.html"><img style="margin-right: 22px;" src="../common/logo.png" alt="">四川俊宜商贸有限公司</a></ul>
+				<ul class="nav">
+					<li><a class="page" href="./index.html">首页</a></li>
+					<li><a href="./dty/dty.html">丹婷游</a></li>
+					<li><a href="./case/case.html">案列</a></li>
+					<li><a href="./service/service.html">服务</a></li>
+					<li><a href="./about/about.html">关于</a></li>
+				</ul>
+			</nav>
+			<div class="title">
+				
+			</div>
+    </header>
 	
 	
 	<footer>
-		<div>
-			<h3>牡丹产业园项目  </h3>
-			<h4 style="margin-bottom: 40px;"> 达州市陈家乡牡丹产业园、达州市周家坪牡丹产业园</h4>
-			<p class='line'></p>		
-		</div>	
-		<div class="show">
-				<img id="footerimg" src="new_agriculture/img/footerimg1.jpg" alt="">
-				<ul class='hoverimg'>
-				<li><img src="new_agriculture/img/footerimg1.png" alt=""></li>
-				<li><img src="new_agriculture/img/footerimg2.png" alt=""></li>
-				<li><img src="new_agriculture/img/footerimg3.png" alt=""></li>
-				<li><img src="new_agriculture/img/footerimg4.png" alt=""></li>
-				</ul>
-		</div>
-		<div class='footer'>
-			<p><span>达州市宏智新农业发展有限公司</span><span>地址：成都市桐梓林南路首座写字楼C座22楼</span><span>电话：208-69365289</span></p>
-			<p><span>Copyright © 2016www.hongzhi.com -All Rights Reserved.</span><span>达州市宏智新农业发展有限公司版权所有</span></p>
+		<img src="./common/footerbg.png" alt="">
+		<div class="footer">
+			<img class="fadeInUp" src="./common/footerlogo.png" alt="">
+			<p class="fadeInUp" style="font-size: 30px;margin-bottom: 20px;">俊宜商贸</p>
+			<p class="fadeInUp">四川俊宜商贸有限公司版权所有</p>
+			<p class="fadeInUp">Copyright © 2016 www.ecshy.com. All Rights Reser</p>
 		</div>
 	</footer>
 
 	<script src='./common/jquery-1.12.4.min.js'></script>
+	<script src='./common/wow.min.js'></script>
 	<script>
-	$(function(){
-
+	$(function () {
+		var wow = new WOW({
+			    boxClass: 'fadeInUp',
+			    animateClass: 'animated',
+			    mobile: true 
+			});
+		wow.init();	
 	})
 	</script>
 </body>
