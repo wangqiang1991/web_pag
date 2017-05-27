@@ -12,7 +12,15 @@
 </head>
 <body>
 	<header>
-			
+			<div class="flash">
+				<object data=" http://localhost:3000/index/img/flash1.swf" type="application/x-shockwave-flash">
+					  <param name="BorderStyle" value="1" />
+					  <param name="MousePointer" value="0" />
+					  <param name="Enabled" value="1" />
+					  <param name="Min" value="0" />
+					  <param name="Max" value="10" />
+				</object>
+			</div>
 			<nav>
 				<ul class="logo"><a href="./index.html"><img style="margin-right: 22px;" src="../common/logo.png" alt="">四川俊宜商贸有限公司</a></ul>
 				<ul class="nav">
@@ -24,11 +32,57 @@
 				</ul>
 			</nav>
 			<div class="title">
-				
+				<p>俊宜商贸</p>
+				<p>高优质农副产品贸易平台</p>
 			</div>
     </header>
-	
-	
+	<div class="content1">
+		<ul>
+			<li class="fadeInUp">农产品配送服务</li>
+			<li class="fadeInUp">油牡丹创新产品</li>
+			<li class="fadeInUp">国内外产品贸易</li>
+		</ul>
+	</div>
+	<div class="content2">
+		<h3 class="fadeInUp">农产品定制套系</h3>
+		<p class="fadeInUp">新鲜健康服务找俊宜</p>
+		<ul>
+			<li><img class="fadeInUp" src="index/img/img1.png" alt=""><h4 class="fadeInUp">家庭健康套系</h4><p class="fadeInUp">鲜活与天然，在家即可享有。</p></li>
+			<li><img class="fadeInUp" src="index/img/img2.png" alt=""><h4 class="fadeInUp">餐厅\酒店套系</h4><p class="fadeInUp">专业供应链，保障食物品质</p></li>
+			<li><img class="fadeInUp" src="index/img/img3.png" alt=""><h4 class="fadeInUp">学校套系</h4><p class="fadeInUp">“蔬”出安全，“菜”会健康</p></li>
+		</ul>
+	</div>
+	<div class="content3">
+		<img src="index/img/bg.jpg" alt="">
+		<div class="more">
+			<h3 class="fadeInUp">农副产品配送服务</h3>
+			<p class="fadeInUp">专业供应链，保障食物品质</p>
+			<span class="fadeInUp">了解更多</span>
+		</div>
+		<div class="plane">
+			<img class="fadeInUp" src="index/img/plane.png" alt="">
+		</div>
+	</div>
+	<div class="content4">
+		<div>
+			<ul>
+				<li><img class="fadeInUp" src="index/img/img4.png" alt=""><p class="fadeInUp">社区配送</p></li>
+				<li><img class="fadeInUp" src="index/img/img5.png" alt=""><p class="fadeInUp"> 学校配送</p></li>
+				<li><img class="fadeInUp" src="index/img/img6.png" alt=""><p class="fadeInUp">企业配送</p></li>
+			</ul>
+			<div class="shop">
+				<h3 class="fadeInUp">品牌云商系列生态城 </h3>
+				<p class="fadeInUp">中国油牡丹渠道创新模式运营项目</p>
+				<div>
+					<div class="left"><img class="fadeInUp" src="index/img/bg2.png" alt=""></div>
+					<div class="right"><p class="fadeInUp">丹婷游是俊宜商贸旗下油用牡丹产品及渠道专用品牌，所卖的商品、所提供的服务聚焦于油用牡丹行业。</p>
+					<p class="fadeInUp">丹婷游为上游厂商提供产品销售和品牌推广平台，是供应商的品牌孵化器。丹婷游为下游客户提供一站式集成采购平台，是值得信赖的采购专家</p>
+					<p class="fadeInUp"> 丹婷游是渠道平台，更是服务平台。在提供优质商品的基础上，更为客户提供优质的服务。</p>
+					<input class="fadeInUp" type="button" value="查看更多"></div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<footer>
 		<img src="./common/footerbg.png" alt="">
 		<div class="footer">
@@ -49,6 +103,14 @@
 			    mobile: true 
 			});
 		wow.init();	
+
+		$('.title>p').eq(0).animate({
+			opacity:1
+		},3000);
+		$('.title>p').eq(1).delay(3000).animate({
+					opacity:1
+		},2000);
+
 	})
 	</script>
 </body>
