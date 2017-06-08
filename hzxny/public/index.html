@@ -88,13 +88,13 @@
 			<p class='line'></p>		
 		</div>	
 		<div class="show">
-				<img id="footerimg" src="new_agriculture/img/footerimg1.jpg" alt="">
+				<img id="footerimg" src="new_agriculture/img/footerimg10.jpg" alt="">
 				<ul class='hoverimg'>
 				<li><img src="new_agriculture/img/footerimg1.png" alt=""></li>
-				<li><img src="new_agriculture/img/footerimg2.png" alt=""></li>
-				<li><img src="new_agriculture/img/footerimg3.png" alt=""></li>
-				<li><img src="new_agriculture/img/footerimg4.png" alt=""></li>
-				</ul>
+				<li><img src="new_agriculture/img/footerimg2.jpg" alt=""></li>
+				<li><img src="new_agriculture/img/footerimg3.jpg" alt=""></li>
+				<li><img src="new_agriculture/img/footerimg4.jpg" alt=""></li>
+				</ul> 
 		</div>
 		<div class='footer'>
 			<p><span>达州市宏智新农业发展有限公司</span><span>地址：成都市桐梓林南路首座写字楼C座22楼</span><span>电话：208-69365289</span></p>
@@ -139,7 +139,7 @@
 				border:'5px solid white'
 			})
 			var img=$(this).attr('src');
-			var jpg = img.slice(0,img.lastIndexOf('.'))+'.jpg';
+			var jpg = img.slice(0,img.lastIndexOf('.'))+'0.jpg';
 			$('#footerimg').attr('src',jpg)
 		})
 
