@@ -1,0 +1,113 @@
+body{
+	font-family: "Microsoft YaHei","Helvetica Neue", Helvetica, Arial, sans-serif
+}
+li{
+	list-style: none;
+}
+a{
+	color: white;
+}
+a:hover{
+	text-decoration: none;
+}
+header{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+header nav{
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background:rgba(0,0,0,.9);
+	z-index: 5;
+}
+header nav>div{
+	width: 72%;
+	margin: auto;
+	height: auto;
+	overflow: hidden;
+}
+header nav>div>li{
+	float: left;
+	line-height: 100px;
+}
+header nav>div>div{
+	float: right;
+}
+header nav>div>div>li{
+	float: left;
+	line-height: 100px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 18px;
+}
+header nav>div>div>li.thisPage{
+	background: rgba(255,255,255,.9);
+}
+header nav>div>div>li.thisPage a{
+	color: black;
+}
+footer{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+footer>img{
+	width: 100%;
+	height: auto;
+}
+footer>div{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background:rgba(0,0,0,.8);
+}
+div.footer>ul{
+	width: 80%;
+	height: auto;
+	margin: auto ;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	padding-left: 0;
+	overflow: hidden;
+}
+div.footer>ul>div{
+	float: left;
+}
+div.footer>ul>div p{
+	font-size: 22px;
+	color: white;
+	margin-bottom: 20px;
+}
+div.footer>ul>div li{
+	font-size: 18px;
+	margin-bottom: 10px;
+	color: white;
+}
+
+div.footer>ul>div li a:hover{
+	color: #30d9dd;
+
+}
+div.footer>ul>div:nth-child(4) li{
+	float: left;
+}
+div.footer>ul>div:nth-child(4) p{
+	font-size: 18px;
+	color: white;
+	margin-top: 12px;
+}
+div.footer>ul>div li img{
+	width: 100%;
+}
+div.footer>p{
+	font-size: 20px;
+	margin-bottom: 0;
+	text-align: center;
+	color: white;
+}
