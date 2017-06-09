@@ -8,8 +8,13 @@ header>img{
 	right: 0;
 	width: 50%;
 	height: 100%;
-	background-image:-webkit-linear-gradient(to right, rgba(255,255,255,0.29),rgba(52,109,122,0.29)); 
-	background-image:linear-gradient(to right,rgba(255,255,255,0.2),rgba(52,109,122,0.9));
+	background-image:-webkit-linear-gradient(to right, rgba(255,255,255,0),rgba(52,109,122,0.9)); 
+	background-image:linear-gradient(to right,rgba(255,255,255,0),rgba(52,109,122,0.9));
+}
+.carousel-inner>div.item:nth-child(2)>.intr{
+	left: 0;
+	background-image:-webkit-linear-gradient(to left, rgba(255,255,255,0),rgba(52,109,122,0.9)); 
+	background-image:linear-gradient(to left,rgba(255,255,255,0),rgba(52,109,122,0.9));
 }
 .carousel-inner>.item>.intr p{
 	color: white;
@@ -20,6 +25,7 @@ header>img{
 }
 .carousel-inner>.item>.intr span{
 	display: block;
+	margin: auto;
 	color: white;
 	font-size: 24px;
 	text-align: center;
@@ -58,20 +64,20 @@ header>img{
 }
 .marquee{
 	width:8000%;
-	height:60px
+	height:250px
 }
 .wave-list-box{
 	float:left
 }
 .wave-list-box ul{
 	float:left;
-	height:60px;
+	height:250px;
 	overflow:hidden;
 	zoom:1;
 	padding-left: 0;
 }
 .wave-list-box ul li{
-	height:60px;
+	height:250px;
 	width:100%;
 	float:left;
 	line-height:30px;
@@ -79,7 +85,7 @@ header>img{
 }
 .wave-box{
 	position:relative;
-	height:60px;
+	height:250px;
 	background:#222
 }
 .history{
@@ -94,4 +100,65 @@ header>img{
 	height: 123px;
 	background: url(img/title02.png);
 	margin: auto;
+}
+.history>div{
+	width: 100%;
+	margin-top: 100px;
+	height: auto;
+	overflow: hidden;
+	font-family: 'Colonna MT';
+	position: relative;
+}
+.history_intr{
+	width: 50%;
+	float: left;
+}
+.history_intr li{
+	width: 100%;
+	overflow: hidden;
+}
+.history_intr li img{
+	width: 50%;
+	height: auto;
+}
+.history_intr li div{
+	width: 50%;
+	height: 100%;
+	padding-left: 30px;
+}
+.history_intr li div p:nth-child(1){
+	font-size: 73px;
+}
+.history_intr li div p:nth-child(2){
+	font-size: 20px;
+	color: #222;
+}
+.history_intr li div p:nth-child(3){
+	font-family:'SimHei';
+	font-size: 20px;
+}
+.history_intr li:nth-child(1) img{
+	float: left;
+}
+.history_intr li:nth-child(2) img{
+	float: right;
+}
+.history_intr li:nth-child(1) div{
+	float: right;
+}
+.history_intr li:nth-child(2) div{
+	float: left;
+}
+#pre,#next{
+	width: 50px;
+	height: 50px;
+	background: #fff;
+	position: absolute;
+	top: 50%; 
+	margin-top: -25px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 50px;
+	color: black;
+	font-family: "SimHei";
 }

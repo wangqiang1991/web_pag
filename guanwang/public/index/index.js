@@ -20,5 +20,12 @@ $(function () {
 	var marqueeScroll1 = new marqueeScroll("marquee-box", "wave-list-box1", "wave-list-box2", 20);
 	var marqueeScroll2 = new marqueeScroll("marquee-box3", "wave-list-box4", "wave-list-box5", 40);
 
+	window.onload = function(){
+		$('#history_div').css({
+		height:$('.history_intr').height()
+		});
+	};
+	
+
 
 })
