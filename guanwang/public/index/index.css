@@ -2,3 +2,96 @@ header>img{
 	width: 100%;
 	height: auto;
 }
+.carousel-inner>.item>.intr{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50%;
+	height: 100%;
+	background-image:-webkit-linear-gradient(to right, rgba(255,255,255,0.29),rgba(52,109,122,0.29)); 
+	background-image:linear-gradient(to right,rgba(255,255,255,0.2),rgba(52,109,122,0.9));
+}
+.carousel-inner>.item>.intr p{
+	color: white;
+	font-size: 40px;
+	text-align: center;
+	padding-top: 50%;
+	margin-bottom: 40px;
+}
+.carousel-inner>.item>.intr span{
+	display: block;
+	color: white;
+	font-size: 24px;
+	text-align: center;
+}
+.com_intr{
+	width: 100%;
+	height: auto;
+	padding-top: 100px;
+	background: #222;
+}
+.com_intr p.title01{
+	width: 167px;
+	height: 121px;
+	background: url(img/title01.png);
+	margin: auto;
+}
+.com_intr p.font{
+	width: 80%;
+	margin: auto;
+	font-size: 20px;
+	color: white;
+	line-height: 32px;
+	text-indent: 40px;
+}
+.wave{
+	margin-top: 100px;
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+.marquee-box{
+	overflow:hidden;
+	width:100%;
+	position:absolute;
+	left:0;top:0
+}
+.marquee{
+	width:8000%;
+	height:60px
+}
+.wave-list-box{
+	float:left
+}
+.wave-list-box ul{
+	float:left;
+	height:60px;
+	overflow:hidden;
+	zoom:1;
+	padding-left: 0;
+}
+.wave-list-box ul li{
+	height:60px;
+	width:100%;
+	float:left;
+	line-height:30px;
+	list-style:none
+}
+.wave-box{
+	position:relative;
+	height:60px;
+	background:#222
+}
+.history{
+	width: 100%;
+	height: auto;
+	background: #fff;
+	padding-top: 70px;
+	padding-bottom: 100px;
+}
+.history p.title02{
+	width: 172px;
+	height: 123px;
+	background: url(img/title02.png);
+	margin: auto;
+}

@@ -1,5 +1,10 @@
 body{
-	font-family: "Microsoft YaHei","Helvetica Neue", Helvetica, Arial, sans-serif
+	font-family: "Microsoft YaHei","Helvetica Neue", Helvetica, Arial, sans-serif;
+	min-width: 1200px;
+}
+@font-face{
+	font-family: 'Colonna MT';
+	src:url(http://localhost:3000/common/font/Colonna MT.ttf);
 }
 li{
 	list-style: none;
