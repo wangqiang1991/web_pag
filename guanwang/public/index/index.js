@@ -27,5 +27,12 @@ $(function () {
 	};
 	
 
+	var ulNumber =$('.history_intr').length;
+	console.log(ulNumber)
+	
+	// $('.carousel').carousel({
+	//   interval: 2000
+	// })
+
 
 })
