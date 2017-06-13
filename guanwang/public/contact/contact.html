@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="Description" content="商汇云专注于让实体店更好的使用互联网拓展客源，公司主要以智慧门店系统，商城系统,以及分销系统的研发及服务。为B2B2C,分销系统、O2O定制业务提供最专业的解决方案,国内专业的模板开发商,提供完善的APP二次开发与模板定制服务，是中国独立网店系统、商城系统和电商解决方案首选品牌。">
+	<meta name="Keywords" content="商汇云app模板定制,商城系统,网店系统,智慧门店系统,独立网店,B2B2C系统服务商,APP二次开发">
+	<meta name="Language" content="zh-CN">
+	<link rel="stylesheet" href="../common/bootstrap.min.css">
+	<link rel="stylesheet" href="../common/common.css">
+	<link rel="stylesheet" href="./contact.css">
+	<link rel="shortcut icon" type="image/x-icon" href="../common/ico.png">
+	<title>关于我们_四川中商汇云科技有限公司</title>
+</head>
+<body>
+	<header>
+		<nav>
+			<div>
+				<li><a href="http://127.0.0.1:3000/index.html"><img src="http://127.0.0.1:3000/common/logo.png" alt="logo"></a></li>
+				<div>
+					<li  style="padding-left: 38px;padding-right: 38px;"><a href="http://127.0.0.1:3000/index.html">首页</a></li>
+					<li ><a href="http://127.0.0.1:3000/about/about.html">关于我们</a></li>
+					<li><a href="http://127.0.0.1:3000/business/business.html">业务体系</a></li>
+					<li><a href="http://127.0.0.1:3000/news/news.html">企业新闻</a></li>
+					<li class="thisPage"><a href="http://127.0.0.1:3000/contact/contact.html">联系我们</a></li>	
+				</div>
+			</div>
+		</nav>
+		<img src="img/header_bg.jpg" alt="header_bg">
+	</header>
+	<div class="content">
+		<div>
+			<h3>联系我们</h3>
+			<div class="left">
+				<p>公司地址：成都市环球中心w6-1609</p>
+				<p>联系电话：400-681-5215</p>
+				<p>官方微信：中商汇云</p>
+			</div>
+			<div id="map"></div>
+			<div class="right">
+				<form>
+					<input type="text" name="name" placeholder="姓名">
+					<input type="text" name="phone" placeholder="电话">
+					<textarea id="txt" cols="30" rows="5" placeholder="说点什么..."></textarea>
+					<input type="button" id="btn" value="提交">
+				</form>
+			</div>
+		</div>
+	</div>
+	<footer>
+			<img src="http://127.0.0.1:3000/common/footerImg.jpg" alt="footerImg">
+			<div class="footer">
+				<ul>
+					<div style="width: 21%">
+						<p>产品</p>
+						<li><a href="#">解决方案</a></li>
+						<li><a href="#">解决方案</a></li>	
+						<li><a href="#">帮助中心</a></li>	
+						<li><a href="#">网站地图</a></li>		
+					</div>
+					<div style="width: 21%">
+						<p>公司</p>
+						<li><a href="#">关于我们 </a></li>
+						<li><a href="#">加盟代理</a></li>	
+						<li><a href="#">在线工单</a></li>	
+						<li><a href="#">友情链接</a></li>		
+					</div>
+					<div style="width: 27%"> 
+						<p>联系方式</p>
+						<li>移动电话：135********</li>
+						<li>客服电话：4006815215</li>	
+						<li>座 机：028-69212964</li>	
+						<li>服务时间：工作日(9:00-17:00)</li>		
+					</div>
+					<div style="width: 31%;">
+						<li style="width: 48%;"><img src="http://127.0.0.1:3000/common/weixin.png" alt="weixing"><p>扫一扫官方微信</p></li>
+						<li style="width: 48%;float: right;"><img src="http://127.0.0.1:3000/common/weibo.png" alt="weibo"><p>扫一扫官方微博</p></li>
+					</div>
+				</ul>
+				<p>四川中商汇云科技有限公司      &copy;版权所有 </p>
+			</div>
+		</footer>
+		<script src='../common/jquery-1.12.4.min.js'></script>
+		<script src='./bdMap.js'></script>
+		<script>
+		$(function () {	
+
+			ShowMap("map",{city:'成都市',addr:'成都市环球中心w6-1609',title:'中商汇云',lawfirm:'四川中商汇云科技有限公司',tel:'400-681-5215',mapx:'',pic:'http://127.0.0.1:3000/contact/img/img.jpg',ismove:'0',piobj:'nxp'});
+
+		})
+		</script>
+</body>
+</html>
