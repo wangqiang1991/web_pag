@@ -112,6 +112,7 @@ header>img{
 .history_intr{
 	width: 50%;
 	float: left;
+	display: none;
 }
 .history_intr li{
 	width: 100%;

@@ -68,16 +68,25 @@ header>img{
 .dot{
 	width:200px;
 	height:200px;
-	border: 1px solid red;
 	position: absolute;
 	z-index: 30;
 	background: green;
+}
+.dot>img{
+	width: 150%;
+	height: 150%;
+	border-radius: 50%;
+	position: absolute;
+	left: -50px; top: -50px;
 }
 .box{
 	width: 0px;
 	height: 10px;
 	background: red;
 	position: absolute;
+}
+.tipchoice{
+	color: #30d9dd;
 }
 .hidediv{
 	width: 200px;

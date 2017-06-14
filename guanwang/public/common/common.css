@@ -4,7 +4,7 @@ body{
 }
 @font-face{
 	font-family: 'Colonna MT';
-	src:url(http://localhost:3000/common/font/Colonna MT.ttf);
+	src:url(font/Colonna MT.ttf);
 }
 li{
 	list-style: none;

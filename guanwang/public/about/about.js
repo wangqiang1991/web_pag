@@ -50,8 +50,6 @@ $(function () {
         var dotLeft = ($(".container").width()-$(".dot").width())/2;
         //中心点纵坐标
         var dotTop = ($(".container").height()-$(".dot").height())/2;
-        //起始角度
-        var stard = 0;
         //半径
         var radius = 200;
         //每一个BOX对应的角度;
@@ -64,10 +62,90 @@ $(function () {
         //设置圆的中心点的位置
         $(".dot").css({"left":dotLeft,"top":dotTop});
         $(".box").each(function(index, element){
-        	console.log(index)
             $(this).css({"left":Math.sin((ahd*index))*radius+dotLeft,"top":Math.cos((ahd*index))*radius+dotTop});
         });
 
 
+        var initnumber = 0;
+        var datalength = $('#history_div>div').length;	
+        var angle = 270/datalength;
+        var starangle =0;
+        var endangle =0;
+        $('#down').click(function(){
+        	if(initnumber<datalength-1){
+        				clearInterval(timer);
+        				$('#history_div>div').eq(initnumber).hide();
+        				$('#dot>img').eq(initnumber).hide();
+        				starangle = angle*initnumber
+        				$('#tip').css({
+        							'transform':'rotate('+-starangle+'deg)'
+        						});
+        				$('.box').eq(initnumber).removeClass('tipchoice')			
+        				initnumber++;
+        				$('#history_div>div').eq(initnumber).show();
+        				$('#dot>img').eq(initnumber).show();
+        				endangle = angle*initnumber;
+        				var aveangle = starangle;
+        				var timer =setInterval(function(){
+        						$('#tip').css({
+        							'transform':'rotate('+-aveangle+'deg)'
+        						});	
+        						aveangle+=angle/40;
+        						console.log(aveangle);
+        						if(aveangle > endangle){
+        							clearInterval(timer);
+        						}
+        				},50);
+        				setTimeout(function(){
+
+        					$('.box').eq(initnumber).addClass('tipchoice')
+        				},2000)
+        			}
+        	if(initnumber == datalength-1){
+        		$(this).hide();
+        	}
+        	if(initnumber>0){
+        		$('#up').show()
+        	}
+        })
+
+         $('#up').click(function(){
+        	if(initnumber>=1){
+        				clearInterval(timer);
+        				$('#history_div>div').eq(initnumber).hide();
+        				$('#dot>img').eq(initnumber).hide();
+        				starangle = angle*initnumber
+        				$('#tip').css({
+        							'transform':'rotate('+-starangle+'deg)'
+        						});
+        				$('.box').eq(initnumber).removeClass('tipchoice')			
+        				initnumber--;
+        				$('#history_div>div').eq(initnumber).show();
+        				$('#dot>img').eq(initnumber).show();
+        				endangle = angle*initnumber;
+        				var aveangle = starangle;
+        				var timer =setInterval(function(){
+        						$('#tip').css({
+        							'transform':'rotate('+-aveangle+'deg)'
+        						});	
+        						aveangle-=angle/40;
+        						console.log(aveangle);
+        						if(aveangle < endangle){
+        							clearInterval(timer);
+        						}
+        				},50);
+        				setTimeout(function(){
+
+        					$('.box').eq(initnumber).addClass('tipchoice')
+        				},2000)
+        			}
+        	if(initnumber == 0){
+        		$(this).hide();
+        	}
+        	if(initnumber <= datalength-1){
+        		$('#down').show()
+        	}
+        })
+   				
 
 })
