@@ -2,3 +2,225 @@ header>img{
 	width: 100%;
 	height: auto;
 }
+header .intr{
+width: 100%;
+height: 100%;
+background: rgba(0,0,0,.6);
+position: absolute;
+top: 0;left: 0;
+}
+header .intr>div{
+	width: 80%;
+	height: 30%;
+	position: absolute;
+	left: 10%; top: 30%;
+}
+header .intr>div p{
+	font-size: 28px;
+	color: white;
+	text-align: center;
+	margin-bottom: 40px;
+}
+header .intr>div span{
+	font-size: 24px;
+	color: white;
+	text-align: left;
+}
+.header_bottom{
+	width: 100%;
+	height: 16%;
+	background:rgba(48,217,221,0.6);
+	position: absolute;
+	left: 0; bottom: 0;
+}
+.header_bottom ul{
+	width: 90%;
+	height: 100%;
+	margin: auto;
+}
+.header_bottom ul li{
+	width: 16.6%;
+	float: left;
+	height: 100%;
+}
+.header_bottom ul li div{
+	width: 80%;
+	height: 90%;
+	margin: auto;
+	padding: 20px;
+	border-radius: 50%;
+	position: relative;
+	cursor: pointer;
+}
+.header_bottom ul li.thischoice div{
+	background: rgba(0,0,0,.6);
+	border-radius:0 0 50% 50%;
+}
+
+.header_bottom ul li div img{
+	width: 100%;
+	height: 100%;
+}
+.body1{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+.body1>img{
+	width: 100%;
+	height: auto;
+}
+.body1 .content1{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,.6);
+}
+.body1 .box1{
+	width: 80%;
+	height: 70%;
+	position: absolute;
+	top: 15%;
+	left: 10%;
+}
+.hand{
+	text-align: center;
+}
+.content{
+	width: 100%;
+	height: 90%;
+	position: relative;
+}
+.content>div{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	opacity: 0;
+}
+.content>div:first-child{
+	opacity: 1; 
+}
+.content>div:first-child .back{
+	opacity: 1; 
+}
+.content>div:first-child .front{
+	opacity: 1; 
+}
+
+
+.content .back{
+	width: 100%;
+	height: 90%;
+	background: rgba(163,166,167,1);
+	border-radius: 5px;
+	position: absolute;
+	left: 0 ;top: 5%;
+	opacity: 0;
+}
+.content .front{
+	position: absolute;
+	top: 0; left: 5%;
+	width: 90%;
+	height: 100%;
+	opacity: 0;
+}
+.content .front>img{
+	width: 100%;
+	height: 100%;
+}
+.content .front>p{
+	position: absolute;
+
+}
+.content .front>p:nth-child(2){
+	top: 25%;
+	text-align: center;
+	font-size: 32px;
+	color: #222;
+	width: 100%;
+	font-weight: 550;
+}
+.content .front>p:nth-child(3){
+	top: 40%;
+	text-align: left;
+	font-size: 24px;
+	color: #666;
+	width: 90%;
+	left: 5%;
+}
+#next,#prev{
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 50px;
+    color: black;
+    font-family: "SimHei";
+    cursor: pointer;
+    }
+
+.body2{
+	width: 100%;height: auto;
+	position: relative;
+}
+.body2>img{
+	width: 100%;
+	height: auto;
+}
+.body2>div{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0; left: 0;
+	background: rgba(48,217,221,0.6);
+}
+.body2 .box2{
+	width: 80%;
+	height: 50%;
+	position: absolute;
+	top: 30%;
+	left: 10%;
+}
+.body2 .box_left{
+	width: 70%;
+	height: auto;
+	float: left;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.body2 .box_left p:nth-child(1),.body2 .box_left p:nth-child(3){
+	font-size: 24px;
+	color: white;
+	padding-left: 80px;
+	margin-bottom: 40px;
+}
+.body2 .box_left p:nth-child(2){
+	font-size: 30px;
+	color: #222;
+	margin-bottom: 20px;
+	height: 50px;
+	line-height: 50px;
+}
+.body2 .box_left p:nth-child(2) span{
+	display: inline-block;
+	width: 70px;
+	border-bottom: 2px solid #222;
+	vertical-align: top;
+	margin-top: 25px;
+	margin-right: 10px;
+}
+.body2 .box_right{
+	width: 30%;
+	height: auto;
+	float: left;
+}
+.body2 .box_right img{
+	width: 100%;
+	height: auto;
+}
