@@ -43,6 +43,23 @@ $(function () {
 	})
 
 
+    var screenHeight = document.documentElement.clientHeight;
+    window.onload = function () {
+        if($('header').height()>screenHeight){
+            $('header').css({
+                height:screenHeight,
+                overflow:'hidden'
+            })
+        }
+        if($('.culture').height()>screenHeight){
+            $('.culture').css({
+                height:screenHeight,
+                overflow:'hidden'
+            })
+        }
+
+    }
+
 
 
 

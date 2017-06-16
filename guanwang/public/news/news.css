@@ -19,7 +19,7 @@ header>div{
 	width: 80%;
 	margin: auto;
 	overflow: hidden;
-	padding-top: 55px;
+	padding-top: 100px;
 }
 .medium>h3{
 	font-family: 'SimHei';
@@ -45,10 +45,14 @@ header>div{
 	width: 50%;
 	height: auto;
 	margin-bottom: 30px;
+	background: red;
 }
 .medium>ul li a{
 	color: #30d9dd;
 	font-size: 18px;
+}
+.medium>ul li a:hover{
+	text-decoration: underline;
 }
 .news_title{
 	width: 80%;

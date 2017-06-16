@@ -122,3 +122,12 @@ div.footer>p{
 	text-align: center;
 	color: white;
 }
+header a:hover{
+	color: #30d9dd;
+}
+
+
+
+#carousel-example-generic>ol>li{
+	margin: 5px;
+}

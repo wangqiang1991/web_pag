@@ -9,7 +9,64 @@ $(function () {
 	// 	$('#carousel-inner>div').eq(number).addClass('active');
 	// 	$('.carousel-indicators>li').eq(number).addClass('active');
 	// })
+	// 
+	var screenHeight = document.documentElement.clientHeight;
 
+	window.onload = function(){
+
+		if($('#carousel-example-generic').height()>screenHeight){
+			$('#carousel-example-generic').css({
+				height:screenHeight,
+				overflow:'hidden'
+			})
+		}
+
+		if($('.body1').height()>screenHeight){
+			$('.body1').css({
+				height:screenHeight,
+				overflow:'hidden'
+			})
+		}
+
+		if($('.body2').height()>screenHeight){
+			$('.body2').css({
+				height:screenHeight,
+				overflow:'hidden'
+			})
+		}
+
+	}
+
+
+	
+
+
+ 	var slideNumber = 0;
+ 	$('#activeUl>ol>li').click(function(){
+ 			var number = $(this).index();	
+            $("#carousel-example-generic").carousel(number);
+ 		$('#activeUl>img').hide();
+ 		$('#activeUl>img').eq(slideNumber).show();
+           	
+     });
+
+ 	//轮播时执行的事件
+ 	$("#carousel-example-generic").on('slide.bs.carousel', function () {
+ 		slideNumber++;
+ 		if(slideNumber == 6){
+ 			slideNumber = 0;
+ 		}
+ 		$('#activeUl>img').hide();
+ 		$('#activeUl>img').eq(slideNumber).show();
+
+    });
+
+
+ 	$('.carousel-indicators>li').click(function(){
+ 		var thisNumber = $(this).index();
+ 		slideNumber = thisNumber - 1;
+ 	});	
+    
 
 	var initNumber = 0;
 	var maxNumber = $('.content>div').length;

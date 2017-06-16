@@ -1,4 +1,10 @@
 $(function () {
+
+	var screenHeight = document.documentElement.clientHeight;
+
+
+
+
 	
 	//波浪动画
 	var marqueeScroll = function (id1, id2, id3, timer) {
@@ -24,6 +30,22 @@ $(function () {
 		$('#history_div').css({
 		height:$('.history_intr').height()
 		});
+
+
+		if($('#carousel-example-generic').height()>screenHeight){
+			$('#carousel-example-generic').css({
+				height:screenHeight,
+				overflow:'hidden'
+			})
+		}
+
+		if($('.com_intr').height()<screenHeight){
+			$('.com_intr').css({
+				paddingTop:screenHeight-$('.com_intr').height()
+			})
+		}
+
+
 	};
 	
 
