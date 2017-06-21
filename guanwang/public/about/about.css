@@ -187,6 +187,11 @@ header>img{
 	text-align: center;
 	font-size: 24px;
 }
+#shici{
+	position: absolute;
+	top: 45%; left: 55%;
+	margin-left: -530px; margin-top: -220px;
+}
 #shici>p{
 	font-size: 48px;
 	text-align: left;

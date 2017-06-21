@@ -22,7 +22,10 @@ header .intr>div p{
 	margin-bottom: 40px;
 }
 header .intr>div span{
-	font-size: 24px;
+	display: inline-block;
+	font-size: 20px;
+	line-height: 50px;
+	text-indent: 50px;
 	color: white;
 	text-align: left;
 }
@@ -166,17 +169,20 @@ header .intr>div span{
 .body2{
 	width: 100%;height: auto;
 	position: relative;
+	background: #000;
 }
 .body2>img{
 	width: 100%;
 	height: auto;
+	opacity: 0.1;
 }
-.body2>div{
+.body2>div{ 
 	width: 100%;
 	height: 100%;
 	position: absolute;
 	top: 0; left: 0;
-	background: rgba(48,217,221,0.6);
+	background-image:-webkit-linear-gradient(to right,rgba(49,145,147,0.5),rgba(71,91,149,0.5)); 
+    background-image:linear-gradient(to right,rgba(49,145,147,0.5),rgba(71,91,149,0.5));
 }
 .body2 .box2{
 	width: 80%;
@@ -195,7 +201,7 @@ header .intr>div span{
 .body2 .box_left p:nth-child(1),.body2 .box_left p:nth-child(3){
 	font-size: 24px;
 	color: white;
-	padding-left: 80px;
+	padding-left: 10px;
 	margin-bottom: 40px;
 }
 .body2 .box_left p:nth-child(2){
@@ -204,6 +210,8 @@ header .intr>div span{
 	margin-bottom: 20px;
 	height: 50px;
 	line-height: 50px;
+	color: #fff;
+	padding-left: 10px;
 }
 .body2 .box_left p:nth-child(2) span{
 	display: inline-block;
@@ -221,4 +229,5 @@ header .intr>div span{
 .body2 .box_right img{
 	width: 100%;
 	height: auto;
+	border: 3px solid #fff;
 }

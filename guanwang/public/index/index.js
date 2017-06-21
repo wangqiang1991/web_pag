@@ -78,6 +78,20 @@ $(function () {
 	// 	)
 	// })
 	 
+		$("#backToP").click(function(){
+                $('body,html').animate({scrollTop:0},1000);
+                return false;
+            });
+		 $(window).scroll(function(){
+                if ($(window).scrollTop()>10){
+                   $("#backToP>a").fadeIn(1500);
+                }
+                else
+                {
+                    $("#backToP>a").fadeOut(1500);
+                }
+            });
+
 	
 	if(data.length%2){
 		for(var i=0;i<data.length-1;i+=2){

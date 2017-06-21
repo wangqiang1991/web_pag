@@ -42,16 +42,31 @@ $(function () {
 
 
  	var slideNumber = 0;
- 	$('#activeUl>ol>li').click(function(){
+ 	var flag = true;
+ 	$('#activeUl>ol>li').mouseenter(function(){
+ 		if(flag){
+ 			flag =false;
  			var number = $(this).index();	
             $("#carousel-example-generic").carousel(number);
- 		$('#activeUl>img').hide();
- 		$('#activeUl>img').eq(slideNumber).show();
-           	
+            slideNumber = number ;
+ 			$('#activeUl>img').hide();
+ 			$('#activeUl>img').eq(slideNumber).show();
+ 			setTimeout(function(){
+ 					flag = true;
+ 			},1000)
+ 		}	
      });
+     
+  $('.carousel').carousel({
+	  interval: 3000
+	})
+
+
 
  	//轮播时执行的事件
  	$("#carousel-example-generic").on('slide.bs.carousel', function () {
+ 		var activeNumber = $('.carousel-indicators>li.active').attr('data-slide-to');
+ 		console.log(activeNumber)
  		slideNumber++;
  		if(slideNumber == 6){
  			slideNumber = 0;
@@ -70,7 +85,7 @@ $(function () {
 
 	var initNumber = 0;
 	var maxNumber = $('.content>div').length;
-	console.log(maxNumber)
+	
 	$('#next').click(function(){
 
 		$('.content>div').eq(initNumber).children('.front').animate({

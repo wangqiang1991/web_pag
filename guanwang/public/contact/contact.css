@@ -69,3 +69,40 @@ header img{
 	background: #42d9de;
 	color: white;
 }
+#meijie{
+	width: 100%;
+	height: auto;
+	padding-top: 25px;
+	clear: both;
+}
+#meijie ul{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+#meijie ul li{
+	width: 23.5%;
+	height: auto;
+	float: left;
+	margin-left:  2%;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background: #fff;
+}
+#meijie ul li:first-child{
+	margin-left: 0;
+}
+#meijie ul li img{
+	width: 50%;
+	height: auto;
+	margin-bottom: 30px;
+	background: red;
+}
+#meijie ul li a{
+	color: #30d9dd;
+	font-size: 18px;
+}
+#meijie ul li a:hover{
+	text-decoration: underline;
+}

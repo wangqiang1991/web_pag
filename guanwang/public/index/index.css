@@ -56,6 +56,16 @@ header>img{
 	height: auto;
 	position: relative;
 }
+.wave>img{
+	width: 100%;
+	height: auto;
+
+}
+.wave>img:last-child{
+	position: absolute;
+	width: 100%; height: auto;
+	top: 0; left:0;
+}
 .marquee-box{
 	overflow:hidden;
 	width:100%;
@@ -162,4 +172,20 @@ header>img{
 	line-height: 50px;
 	color: black;
 	font-family: "SimHei";
+}
+
+#backToP>a{
+	display: block;
+	width: 50px; height: 50px;
+	background: #00a599;
+	color: white;
+	position: fixed;
+	right: 50px;
+	bottom: 150px;
+	z-index: 99;
+	cursor: pointer;
+	text-align: center;
+	line-height: 28px;
+	border: none;
+	display: none;
 }

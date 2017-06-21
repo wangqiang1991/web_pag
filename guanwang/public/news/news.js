@@ -18,6 +18,16 @@ $(function () {
            })
 
         }
+
+     console.log($('header').height())   
+     $('.news_title').css({
+      top:-$('header').height()/2
+     })
+     $('footer').css({
+      marginTop:-$('header').height()/2
+     })
+
+
     }
 
 

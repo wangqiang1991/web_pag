@@ -44,6 +44,8 @@ $(function () {
 
 
     var screenHeight = document.documentElement.clientHeight;
+    var screenWidth = document.documentElement.clientWidth;
+    console.log(screenWidth)
     window.onload = function () {
         if($('header').height()>screenHeight){
             $('header').css({
@@ -57,6 +59,13 @@ $(function () {
                 overflow:'hidden'
             })
         }
+
+        if(screenWidth>1400)
+            $('#shici').css({
+                marginLeft:-$('#shici').width()/2,
+                marginTop:-$('#shici').height()/2   
+            })
+        // console.log($('#shici').width())
 
     }
 
