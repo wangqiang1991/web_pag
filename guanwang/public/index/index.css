@@ -4,37 +4,27 @@ header>img{
 }
 .carousel-inner>.item>.intr{
 	position: absolute;
-	top: 0;
-	right: 0;
+	top: 40%;
+	left: 25%;
 	width: 50%;
-	height: 100%;
-	background-image:-webkit-linear-gradient(to right, rgba(255,255,255,0),rgba(52,109,122,0.9)); 
-	background-image:linear-gradient(to right,rgba(255,255,255,0),rgba(52,109,122,0.9));
-}
-.carousel-inner>div.item:nth-child(2)>.intr{
-	left: 0;
-	background-image:-webkit-linear-gradient(to left, rgba(255,255,255,0),rgba(52,109,122,0.9)); 
-	background-image:linear-gradient(to left,rgba(255,255,255,0),rgba(52,109,122,0.9));
+	height: auto;
 }
 .carousel-inner>.item>.intr p{
-	color: white;
-	font-size: 40px;
+	color: #30d9dd;
+	font-size: 48px;
 	text-align: center;
-	padding-top: 50%;
-	margin-bottom: 40px;
+	margin-bottom: 88px;
 }
 .carousel-inner>.item>.intr span{
 	display: block;
-	margin: auto;
-	color: white;
-	font-size: 24px;
+	color: #fff;
+	font-size: 30px;
 	text-align: center;
 }
 .com_intr{
 	width: 100%;
 	height: auto;
 	padding-top: 100px;
-	background: #222;
 }
 .com_intr p.title01{
 	width: 167px;
@@ -188,4 +178,12 @@ header>img{
 	line-height: 28px;
 	border: none;
 	display: none;
+}
+
+#com_intr{
+	position: relative;
+	width: 100%;
+	height: auto;
+	
+	    background: url(img/body2_img.jpg) 0% 0% / cover
 }

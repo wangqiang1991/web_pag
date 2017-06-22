@@ -66,7 +66,7 @@ $(function () {
  	//轮播时执行的事件
  	$("#carousel-example-generic").on('slide.bs.carousel', function () {
  		var activeNumber = $('.carousel-indicators>li.active').attr('data-slide-to');
- 		console.log(activeNumber)
+ 		
  		slideNumber++;
  		if(slideNumber == 6){
  			slideNumber = 0;
@@ -87,31 +87,17 @@ $(function () {
 	var maxNumber = $('.content>div').length;
 	
 	$('#next').click(function(){
-
-		$('.content>div').eq(initNumber).children('.front').animate({
-			left:'8%',
-			opacity:'0'	
-		},1000);
-		$('.content>div').eq(initNumber).children('.back').animate({
-			marginLeft:'-20px',
-			opacity:'0'	
-		},1000);
-		$('.content>div').eq(initNumber).delay(1000).animate({
-			opacity:'0'	
-		},1000);
+		console.log(initNumber)
+		
+		$('.content>div').eq(initNumber).animate({
+			'opacity':'0'
+		},1500).hide();
 
 
-		$('.content>div').eq(initNumber+1).children('.front').animate({		
-			opacity:'1',
-			left:'5%'	
-		},1000);
-		$('.content>div').eq(initNumber+1).children('.back').animate({
-			marginLeft:'0',
-			opacity:'1'	
-		},1000);
-		$('.content>div').eq(initNumber+1).delay(1000).animate({
-			opacity:'1'
-		},1000);
+		
+		$('.content>div').eq(initNumber+1).animate({
+			'opacity':'1',
+		},1500).show();
 
 		
 
@@ -128,33 +114,19 @@ $(function () {
 
 
 	$('#prev').click(function(){
-
+		console.log(initNumber)
 		
 
-		$('.content>div').eq(initNumber).children('.front').animate({
-			left:'3%',	
-			opacity:'0'
-		},1000);
-		$('.content>div').eq(initNumber).children('.back').animate({
-			marginLeft:'20px',
-			opacity:'0'
-		},1000);
-		$('.content>div').eq(initNumber).delay(1000).animate({
-			opacity:'0'	
-		},1000);
+		$('.content>div').eq(initNumber).animate({
+			'opacity':'0'
+		},1500).hide();
+
 
 		
-		$('.content>div').eq(initNumber-1).children('.front').animate({		
-			opacity:'1',
-			left:'5%'	
-		},1000);
-		$('.content>div').eq(initNumber-1).children('.back').animate({
-			marginLeft:'0',
-			opacity:'1'	
-		},1000);
-		$('.content>div').eq(initNumber-1).delay(1000).animate({
-			opacity:'1'
-		},1000);
+		$('.content>div').eq(initNumber-1).animate({
+			'opacity':'1',
+		},1500).show();
+
 
 		initNumber--;
 

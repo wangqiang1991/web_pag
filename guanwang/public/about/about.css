@@ -148,14 +148,30 @@ header>img{
 	font-size: 32px;
 	background: rgba(0,0,0,0.6);
 	cursor: pointer;
+	position: relative;
 }
-.culture_nav ._choice{
-	height: 180px;
-	background: rgba(0,0,0,0);
-	background-image: url(img/lichoice.png);
-	background-size: 100%;
-	margin-top: -30px;
-	line-height: 180px;
+.culture_nav li img{
+	display: none;
+}
+.culture_nav ._choice div{
+	width: 100%;
+	height: 150px;
+	position: absolute;
+	left: 0; bottom: 0;
+	z-index: 10;
+}
+.culture_nav ._choice  p{
+	width: 100%;
+	height: 162px;
+	position: absolute;
+	left: 0; bottom: 0;
+	z-index: 5;
+}
+
+.culture_nav ._choice p img{
+	display: block;
+	width: 100%;
+	height: 100%;
 }
 .culture_content{
 	width: 85%;
@@ -194,24 +210,22 @@ header>img{
 }
 #shici>p{
 	font-size: 48px;
-	text-align: left;
-	padding-left: 30%;
+	text-align: center;
 	margin-bottom: 30px;
 }
 
 #shici>div p{
-	margin-bottom: 15px;
+	margin-bottom: 6px;
 }
 
 #shici>div:nth-child(2){
 	float: left;
-	width: 50%;
+	width: 100%;
 	font-size: 18px;
 }
-#shici>div:nth-child(3){
-	float: left;
-	width: 50%;
-	font-size: 18px;
+#shici>div:nth-child(2) p{
+	padding-left: 30%;
+
 }
 .team{
 	width: 100%;
@@ -286,3 +300,24 @@ header>img{
 	margin-right: 80px;
 	cursor: pointer;
 }
+
+
+header>div{
+	width: 60%;
+	height: auto;
+	position: absolute;
+	top: 30%;
+	left: 20%;
+}
+header>div p:nth-child(1){
+	color: #30d9dd;
+	font-size: 38px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+header>div p:nth-child(2){
+	color: #666;
+	font-size: 30px;
+	text-align: center;
+}
+

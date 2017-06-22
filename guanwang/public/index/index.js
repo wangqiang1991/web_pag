@@ -30,7 +30,7 @@ $(function () {
 		$('#history_div').css({
 		height:$('.history_intr').height()
 		});
-
+		
 
 		if($('#carousel-example-generic').height()>screenHeight){
 			$('#carousel-example-generic').css({
