@@ -47,12 +47,12 @@ $(function () {
     var screenWidth = document.documentElement.clientWidth;
     console.log(screenWidth)
     window.onload = function () {
-        if($('header').height()>screenHeight){
-            $('header').css({
-                height:screenHeight,
-                overflow:'hidden'
-            })
-        }
+        // if($('header').height()>=screenHeight){
+        //     $('header').css({
+        //         height:screenHeight,
+        //         overflow:'hidden'
+        //     })
+        // }
         if($('.culture').height()>screenHeight){
             $('.culture').css({
                 height:screenHeight,
@@ -66,6 +66,8 @@ $(function () {
                 marginTop:-$('#shici').height()/2   
             })
         // console.log($('#shici').width())
+        
+
 
     }
 
@@ -172,6 +174,9 @@ $(function () {
         		$('#down').show()
         	}
         })
+
+
+         $('#scene').parallax();   
    				
 
 })

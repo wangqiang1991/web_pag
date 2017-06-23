@@ -46,7 +46,39 @@ $(function () {
 		}
 
 
+
+
 	};
+
+
+	$('#pbSlider0').pbTouchSlider({
+	  slider_Wrap: '#pbSliderWrap0',
+	  slider_Threshold: 10,
+	  slider_Speed:600,
+	  slider_Ease:'ease-out',
+	  slider_Drag : true,
+	  slider_Arrows: {
+	    enabled : true
+	  },
+	  slider_Dots: {
+	    class :'.o-slider-pagination',
+	    enabled : true
+	  },
+	  slider_Breakpoints: {
+	      default: {
+	          height: 850
+	      },
+	      tablet: {
+	          height: 350,
+	          media: 1024
+	      },
+	      smartphone: {
+	          height: 250,
+	          media: 768
+	      }
+	  }
+	});
+
 	
 
 
